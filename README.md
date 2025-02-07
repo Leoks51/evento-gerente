@@ -2,26 +2,36 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
-## Development server
+## Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este e um projeto com finalidade de cumprir com desafio de teste técnico.
+Com ele você conseguira criar eventos voltado ao ambiente de igreja, visualizar detalhes do evento, excluir editar e etc. 
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Primeiros Passos
 
-## Build
+- Clone o repositorio em sua maquina, feito o passo anterior, você deve instalar as dependências do node com `npm install`.
+- Abra a pasta backend do repositorio e inicie com `json-server --watch db.json`.
+- Na raiz do projeto inicie com `ng serve`.
+- Entrando no navegador no endereço `http://localhost:4200` você tera a tela de login.
+- O usuário e senha serão `admin`.
+ 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Evidencias
 
-## Running unit tests
+### Tela lista de eventos 
+<img width="1437" alt="Captura de Tela 2025-02-07 às 07 28 32" src="https://github.com/user-attachments/assets/9b74c2da-e2aa-4f3b-8751-e37030909c49" />
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Tela criação de eventos
+<img width="1435" alt="Captura de Tela 2025-02-07 às 07 30 47" src="https://github.com/user-attachments/assets/e4385a20-796b-4cd0-af89-9ef30421267d" />
 
-## Running end-to-end tests
+### Tela edição de eventos
+<img width="399" alt="Captura de Tela 2025-02-07 às 07 29 43" src="https://github.com/user-attachments/assets/441483ff-d17e-4b6b-bc2a-7815ce475d24" />
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Tabela de eventos
+<img width="1440" alt="Captura de Tela 2025-02-07 às 07 31 28" src="https://github.com/user-attachments/assets/722e0f4f-67b2-4cd0-9951-d12dbaf7d258" />
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
