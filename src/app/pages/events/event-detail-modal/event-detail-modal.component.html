@@ -1,0 +1,10 @@
+<mat-dialog-content>
+    <div class="image">
+    <img class="card-image" [src]="event.image" alt="Imagem do evento">
+    </div>  
+    <h2 mat-dialog-title>{{ event.title }}</h2>
+    <p>{{ event.dateTime }}</p>
+    <h3>{{ event.shortDescription }}</h3>
+    <p>{{event.description}}</p>
+    
+</mat-dialog-content>

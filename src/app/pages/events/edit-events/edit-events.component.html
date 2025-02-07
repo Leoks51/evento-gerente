@@ -1,0 +1,42 @@
+<h2 class="edit-title" mat-dialog-title>Editar Evento</h2>
+<mat-dialog-content>
+  <form [formGroup]="eventForm" class="form">
+    <div class="example-container">
+        <mat-form-field hintLabel="Max 30 characters" class="form-full-width">
+          <mat-label>Titulo</mat-label>
+          <input matInput #input maxlength="30" formControlName="title" placeholder="Ex. Nougat" />
+        </mat-form-field>
+
+        <mat-form-field hintLabel="Max 50 characters" class="form-full-width">
+            <mat-label>Tema</mat-label>
+            <input matInput #input maxlength="50" formControlName="shortDescription" placeholder="Ex. Nougat" />
+          </mat-form-field>
+
+        <mat-form-field class="form-full-width">
+            <mat-label>Descriçao</mat-label>
+            <textarea formControlName="description" matInput></textarea>
+          </mat-form-field>
+      </div>
+
+      <mat-form-field class="form-full-width">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dateTime">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+    <mat-form-field class="form-full-width">
+      <mat-label>Status</mat-label>
+      <mat-select formControlName="status">
+        <mat-option value="ativo">Ativo</mat-option>
+        <mat-option value="inativo">Inativo</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="closeModal()">Cancelar</button>
+  <button mat-button (click)="saveEvent()" [disabled]="eventForm.invalid">Salvar</button>
+</mat-dialog-actions>

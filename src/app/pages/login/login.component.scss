@@ -1,0 +1,25 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  mat-card {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .logo{
+    text-align: center;
+    font-family: fantasy;
+    font-size: xx-large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

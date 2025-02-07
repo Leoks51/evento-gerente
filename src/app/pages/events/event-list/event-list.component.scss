@@ -1,0 +1,64 @@
+.card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+
+      }    
+.event-card{
+        max-width: 300px;
+        margin-bottom: 8px;
+}
+
+.search{
+  margin-top: 10px;
+}
+
+.search-field{
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar{
+  background-color: #424242;
+    display: flex
+;
+    justify-content: center;
+
+  h1{
+    color: white;
+    margin: 10px;
+  }
+}
+
+.card-image{
+  max-width: 300px;
+  height: 200px;
+}
+
+.table-container {
+        overflow-x: auto;
+      }
+      
+      .mat-table {
+        width: 100%;
+      }
+      
+      @media (max-width: 600px) {
+        .mat-header-cell, .mat-cell {
+          padding: 8px;
+          font-size: 12px;
+        }
+      
+        .mat-table {
+          font-size: 12px;
+        }
+      
+        .mat-table th, .mat-table td {
+          white-space: nowrap;
+        }
+        
+        .mat-column-date {
+          display: none;
+        }
+      }
